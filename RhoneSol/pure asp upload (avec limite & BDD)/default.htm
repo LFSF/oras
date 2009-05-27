@@ -1,0 +1,80 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+ <title>ASP huge file upload - samples.</title>
+ <style type="text/css">
+	body {font-size:10pt;font-family:arial,helvetica,sans-serif }
+ </style>
+ <meta name="robots" content="noindex,nofollow">
+</head>
+<body bgcolor="white" >
+<div style="width:600">
+<b>Warning: do not use these samples on your live server or remove them after tests.
+This samples really work and they allow any user to upload files to your server, 
+  if the user knows the sample URL. </b>
+<h3><a href="http://www.motobit.com/help/scptutl/upload.asp">Pure ASP file upload</a> sample list</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Upload samples - base samples</h4>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Base.ASP">Upload-Base.ASP</a> -  shortes ASP server-side code, simple upload of three files, without additional fields. ASP code specifies only Form.SizeLimit (maximum size of upload), Server.ScriptTimeout (maximum time to do upload) and DestinationPath (folder to store uploaded files). 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Progress.ASP">Upload-Progress.ASP</a> - sample upload of three files with progress bar and additional text field.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Progress-Galery\Upload-ProgressGal.ASP">Upload-ProgressGal.ASP</a> - several types of progress bar indicators (customized progress bars).
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Images-FileSize-Unique-Notification.ASP">Upload-Images-FileSize-Unique-Notification.ASP</a> - sample with extended image upload features:
+<ul>
+<li>Client-side preview of images, Client-side check of file extensions
+<li>Client-side check and preview of file and form size
+<li>Upload with progress bar
+<li>Server side checking for form and file size, checking of a file CONTENTS
+<li>Server side checking of file extensions, content-type, checking of a file CONTENTS 
+<li>Save files with unique file names, store upload info to a database 
+</ul>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-ChooseDest.ASP">Upload-ChooseDest.ASP</a> - demonstrates upload to a specified destination, you can select destination folder in the source form.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Email-Progress.asp">Upload-Email-Progress.asp</a> - "Upload to email", upload a file and send the file as an attachment of email message.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="db-file-to-binary.asp">db-file-to-binary.asp</a> - "upload to database", demontrates uploading and storing files in server-side database
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="db-file-to-disk.asp">db-file-to-disk.asp</a> - upload of files to server disk and store upload info (file path) in server-side database
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="SimpleWeb\manage.asp">Simple web - manage.asp</a> - Simple file manager. Let's you create folders, upload files with progress, download one file or multiple files with zip/arj compression.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Unique-names.asp">Upload-Unique-names.asp</a> - Store files with unique file names on server-side (not overwrite existing files)
+<br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Limit-File.ASP">Upload-Limit-File.ASP</a> - upload with limitted size of files.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Upload-Notification.ASP">Upload-Notification.ASP</a> - Upload with email notification to administrator
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Upload-cause-read.asp - (only hugeasp file upload)demonstrates reading part of a source data (text, hidden and checkbox fields) when source data size exceeds a form limit.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JS-Upload-Base.ASP - (only hugeasp file upload) Sample upload written in JScript on server-side ASP
+
+<h4>Conversion samples (external samples)</h4>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.motobit.com/util/base64-decoder-encoder.asp">base64-decoder-encoder.asp</a> - Online base64 decoder and encoder. Decode/encode data from/to files and text fields. 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.motobit.com/util/binary-file-to-sql-hexstring.asp">binary-file-to-sql-hexstring.asp</a> - Sample for HexString property (base16). Create an sql command to insert/update binary or image field in a database.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.motobit.com/util/punycode-decoder-encoder.asp">punycode-decoder-encoder.asp</a> - Online sample for Punycode property of ByteArray. Punycode conversion, IDN (Internationalized Domain Names) conversion.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.motobit.com/util/charset-codepage-conversion.asp">charset-codepage-conversion.asp</a> - Online conversion between codepages/character sets.
+
+<h4>Another Form samples</h4>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; form-url-encode-utf-8.asp - (only hugeasp file upload)Plain x-www-form-urlencoded form, with UNICODE text and NO real limit (2GB)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="db-Synchro/db-synchronize.asp">db-synchronize.asp</a> - upload and binary database fields. It let's you synchronize client-side and server-side database records. 
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~Upload-Check-Requirements.asp (only hugeasp file upload) - Checks required user accounts and rights to required folders (temp), evaluation expiration date
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bytearray-store-large-data.asp (only hugeasp file upload) - store of large RAW binary data stream using ScriptUtils.ByteArray and Block-by-block reading (to save server memory).
+ 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Upload-Progress-Cookie.ASP (only hugeasp file upload) - Progress bar realized using cookies, not by querystring.
+
+<h4>Partial and features samples</h4>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\db-bytearay.asp">db-bytearay.asp</a> - Store files to a DB with one row of code - RS("Data") = Form("DBFile").ByteArray
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\db-HexString.asp">db-HexString.asp</a> - Store files to a DB using hexstring (base16), one block.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\db-appendchunk.asp">db-appendchunk.asp</a> - Store very large files (up to 100th of megabytes) to a database using block-by-block and AppendChunk method of a recordset, for MDB/Jet.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\db-HexStringChunk.asp">db-HexStringChunk.asp</a> - Store very large files (up to 100th of megabytes) to a database using block-by-block and hexstring (base16), for MS SQL.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\db-store-save.asp">db-store-save.asp </a> - file to disk, upload info to DB
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\Field-Name.asp">Field-Name.asp</a> - work with field names
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\Field-Save.asp">Field-Save.asp</a> - Save method of a field and form object.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\Field-SaveAs-I.asp">Field-SaveAs-I.asp</a> - Save source files with new unique names
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\Fields-Count.asp">Fields-Count.asp</a> - sample for count property, count of fileds and values for multiple selects and other form fields
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\Form-MultiItem.asp">Form-MultiItem.asp</a> - sample for multiitems (multiple select form fields)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\Form-Texts.asp">Form-Texts.asp</a> - work with form text fields (non-file fields)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Special\preview-text.asp">preview-text.asp</a> - preview a text or HTML file, before upload
+
+<hr color=silver size=1>
+<center>
+<font size=1>&copy; 1996 – 2004 Antonin Foller, <a href="http://www.motobit.com">Motobit software</a>, e-mail <a href="mailto:help@pstruh.cz" >help@pstruh.cz</a>
+<br>To monitor current running uploads/downloads, see <a href="http://www.motobit.com/help/iistrace/iis-monitor.asp">iistracer - iis real-time monitor</a>.
+</font>
+
+</center>
+</div>
+</body></html>

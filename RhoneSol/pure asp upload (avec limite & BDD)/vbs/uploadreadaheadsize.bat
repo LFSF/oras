@@ -1,0 +1,1 @@
+cscript adsutil.vbs SET W3SVC/1/Root/Upload/UploadReadAheadSize 0

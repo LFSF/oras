@@ -1,0 +1,33 @@
+  Motobit PureASP file upload v2.0 changes history
+With progress bar, chunk data reading and enhanced samples.
+c 1998-2004 Antonin Foller, Motobit Software
+http://www.motobit.com
+
+2.00 1.1.2003 - basic release 
++ improoved performance (100-200MB upload)
++ progress bar
++ new object model, a lot of properties/methods, see help
+
+2.01 29.1.2003
+Problem with Text/Files detection for empty file field solved.
+2.00 version detects empty file field (without file name) as a text field.
+
+2.02 15.2.2003
+MultiItem property added to FormFields collection to handle select multiple
+ and fields with the same names.
+http://www.motobit.com/help/scptutl/cm394.htm
+
+2.03, 2.04 5-6.2003
+Problem with m_Items array and different VBScript versions solved
+
+2.05 22.10.2003
+FileExt property added to Field object
+http://www.motobit.com/help/scptutl/cm425.htm
+
+2.06 17.2.2004
+Huhhh!!! Previous versions probably do not store files with zero or one byte!
+'if len(ByteArray)>0 then' removed from SaveAs (problem with one byte)
+some more changes to store zero-byte files
+
+2.06 7.8.2004
+New sample - Upload-Images-FileSize-Unique-Notification.ASP 
