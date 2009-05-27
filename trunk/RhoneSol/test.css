@@ -1,0 +1,51 @@
+/* elements */
+.elements { border:1px solid #e9e8e8; width:80%; margin-bottom: 20px; }
+
+.elements h3 { display: block; font-weight: bold; font-size: 130%; font-weight: bold; color: #ffffff; text-transform: uppercase; background: url('http://www.letudiant.fr/file/resources/etu/front/css/../img/bg_accor-header.gif'); padding: 5px 8px; }
+h4 { display: block; font-size: 100%; font-weight: bold; color: #4c4c4c; cursor: pointer;  padding: 1%; color:#000000;}
+.elements h4:hover, .elements h4.sfhover { text-decoration: underline; }
+.elements #no-accordeon h4 { cursor:auto; }
+.elements #no-accordeon h4:hover, .elements #no-accordeon h4.sfhover { text-decoration: none; }
+.elements div div { border-top: 1px solid #e1e0e0; padding: 10px 0px 10px 10px; display: none; }
+.elements #no-accordeon div { display:block; }
+
+.elements .characters { padding: 12px 0px 12px 13px; }
+.elements .characters a { width: 15px; display: block; float: left; text-align: center; border: 1px solid #e2e1e1; text-decoration: none; color: #000; font-size: 100%; margin: 2px 2px 3px 2px; }
+
+.elements ul { display: inline; width: 125px; float: left; margin-left: 10px; }
+* html .elements ul { margin-left: -6px; }
+*:first-child+html .elements ul { margin-left: -6px; }
+
+.elements .oneList ul { width:280px; }
+.elements .blockList { padding:0 0 5px 0; }
+.elements .blockList p { padding:6px 6px 6px 10px; }
+
+.elements  a { text-decoration:none; color:#000000;}
+
+
+.elements ul li a { display: block; text-decoration: none; color: #0d859f; padding: 2px 0px; }
+* html .elements ul li a { height: 0.01%; }
+.elements ul li a:hover { text-decoration: underline; }
+
+.elements form { }
+.elements label { display: block; padding: 4px 0px; width: 278px; }
+* html .elements label { display: inline-block; }
+.elements label:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.elements label span { display: block; float: left; padding: 2px 0px 0px 6px; }
+.elements label input, .elements label select { display: block; float: left; color: #666666; font-size: 100%; }
+
+.elements .mid span { width: 84px; }
+.elements .mid input, .elements .mid select { width: 184px; }
+
+.elements .long span { width: 50px; }
+.elements .long input, .elements .long select { width: 218px; }
+
+.elements .with-link span { width:238px; }
+.elements .with-link span a { color:#0d859f; text-decoration:underline; }
+.elements .with-link input, .elements .with-link select { width:auto; }
+
+.elements .with-plus { background:url('http://www.letudiant.fr/file/resources/etu/front/css/../img/icon_plus.gif') no-repeat left center; padding-left:22px; color:#0d859f; text-decoration:underline; }
+.elements .with-plus-block { background:url('http://www.letudiant.fr/file/resources/etu/front/css/../img/icon_plus.gif') no-repeat left 12px; display:inline; color:#0d859f; text-decoration:underline; width:200px; float:left; padding:14px 22px 6px 22px; margin-left:8px; }
+.elements .RechercherButton { float:right; margin:20px 20px 20px 20px; display:inline; }
+
+
