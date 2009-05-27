@@ -68,7 +68,7 @@ End If
                 Response.Write "...</p>"
               end if
             %>
-        </td>
+        </td> <td width="20"><a href="p_actualitesbis.asp?num=<%=rsED("NumActu")%>"><img src="img/postdisplay.gif" border="0"></a></td>
         <!--<td align="right">
 
         </td>-->
