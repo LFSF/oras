@@ -1,0 +1,28 @@
+
+mot de passe administrateur PC central: rosin
+
+mot de passe VNC pc central : homeje@nj@ures
+
+Config IP PC central
+
+IP : 192.168.1.103
+     255.255.255.0
+passerelle par defaut : 192.168.1.1
+serveur DHCP : 212.27.54.252
+serveur DNS  : 212.27.53.252
+MAC adresse : 00-0B- CD-27-DF-D0
+nom de l'hote : pc-ab64cc1c37e7
+
+
+MON ADRESSE IP : 82.228.202.77
+
+
+
+****************************
+
+adresse ip oras : 82.67.39.162  mot de passe  vnc : @ssoci@tion-or@s
+
+
+*************************************
+
+adresse ip venissieux : 82.235.158.30 mot de passe vnc : billon

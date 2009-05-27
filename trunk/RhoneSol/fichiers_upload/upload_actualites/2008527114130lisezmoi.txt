@@ -1,0 +1,92 @@
+version francophone du fichier readme.txt
+--------------------------------------------------------------------
+  LeechFTP 1.3 (Build 207) distribution du 16.04.99
+--------------------------------------------------------------------
+
+ - Correction d'un problème de version d'une dll (comctl32.dll v5.x)
+   avec IE5/Win2000
+ - Les transferts récursifs respectent maintenant le réglage des
+   extensions de fichiers ASCII
+ - Le problème de protection générale à la fermeture du programme
+   est normalement résolu
+
+--------------------------------------------------------------------
+ Retour d'information
+--------------------------------------------------------------------
+ Si vous avez des problèmes graves lors de l'utilisation de ce
+ logiciel ou si vous découvrez un bug, n'hésitez pas à me contacter.
+ A cause du nombre impressionnant de mails que je recois, je ne peux
+ garantir de répondre à tous.
+
+ Mon adresse e-mail: Jan Debis <debis@rz.fh-heilbronn.de>
+
+ Vérifiez ma page d'accueuil pour obtenir des nouvelles de LeechFTP
+   page anglophone  : http://linux.fh-heilbronn.de/~debis/leechftp/
+   page francophone : http://leechftp.citeweb.net/
+
+--------------------------------------------------------------------
+ $$$
+-------------------------------------------------------------------- 
+ De plus, si vous aimez ce logiciel et voulez exprimer votre
+ gratitude ou encourager de futurs développements, n'hésitez pas à
+ me faire des dons en argent ou en materiel. Je suis étudiant et les
+ accepte avec joie. N'envoyez pas de chèque s'il vous plaît
+ (l'encaissement est très cher en Allemagne). Les dollars US en
+ liquide ne posent pas de problème.
+
+ Tous les dons sont bienvenus, envoyez les à
+
+             Jan Debis 
+             Humboldtstrasse 12
+             74076 Heilbronn
+             GERMANY
+
+--------------------------------------------------------------------
+ Limitations connues:
+--------------------------------------------------------------------
+ Les signets sont chargés au démarrage du programme et sauvés à sa
+ fermeture. Ainsi, si vous ouvrez plusieurs instances du programme,
+ vous risquez de perdre les changements éventuels que vous feriez
+ aux signets suivant l'instance vous fermez en premier.
+
+--------------------------------------------------------------------
+ Licence
+--------------------------------------------------------------------
+ Ce logiciel est distribué en tant que FREEWARE, mais il ne doit
+ être ni vendu ni inclu dans un produit ou package commercial. Ce
+ logiciel peut être distribué gratuitement sur l'Internet tant que
+ ses fichiers demeurent inchangés. Ce logiciel ne peut être inclu
+ dans un CD-ROM sans l'accord de son auteur.
+
+--------------------------------------------------------------------
+ RESPONSABILITÉS LEGALES
+--------------------------------------------------------------------
+CE LOGICIEL ET LES FICHERS QUI L'ACCOMPAGNENT SONT DISTRIBUES
+"TELS QUELS" ET SANS AUCUNE GARANTIE EXPLICITE OU IMPLICITE. AUCUNE
+RESPONSABILITE POUR D'EVENTUELS DOMMAGES OU VICES DE FONCTIONNEMENT
+NE PEUT ETRE IMPUTEE A SON AUTEUR. L'UTILISATEUR ASSUME L'ENTIERE
+RESPONSABILITE DE L'UTILISATION DE CE PROGRAMME.
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Developpé par
+Jan Debis <debis@rz.fh-heilbronn.de>
+74076 Heilbronn / Germany
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Version francophone par
+Charles Sauthier <chandra@citeweb.net>
+
+Cette version francisée est distribuée avec l'accord de Jan Debis.
+J'ai effectué cette traduction avec plaisir pour promouvoir d'une
+part le travail de qualité effectué par son auteur, et d'autre part
+le système de distribution FREEWARE dans les pays francophones.
+Le FREEWARE autorise la distribution et l'utilisation gratuite d'un
+logiciel. Par contre il interdit la modification du logiciel ou sa
+distribution sur du materiel "lucratif".
+
+Il est inutile de me contacter pour toute question ou tout problème
+relatif au logiciel en lui même.
+Je ne connais pas Jan Debis personnellement.
+--------------------------------------------------------------------

@@ -1,0 +1,7 @@
+
+ background: #ce6202;
+
+ color             : #fff;
+
+
+    background        : #FFFFFF url("../imgs/logo_blog.jpg") no-repeat left;
