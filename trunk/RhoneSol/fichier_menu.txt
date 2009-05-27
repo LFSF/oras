@@ -1,0 +1,12 @@
+<div id="menu">
+	<div id="accueil"><a href="p_accueil.asp">Accueil</a></div>
+    <div id="presentation"><a href="p_presentation.asp">Pr&eacute;sentation</a></div>
+    <div id="interview"><a href="p_interview.asp">Interview</a></div>
+    <div id="actu"><a href="p_actualites.asp">Actualit&eacute;s</a></div>
+    <div id="partenaires"><a href="p_partenaires.asp">Nos partenaires</a></div>
+    <div id="annonces"><a href="p_annonces.asp">Annonces</a></div>
+    <div id="infos"><a href="p_infos_historique.asp">Infos pratiques</a></div>
+    <div id="rejoindre"><a href="p_adhesion.asp">Rejoignez-nous</a></div>
+    <div id="blog"><a href="http://www.forum-equitable.com">Blog/Forum</a></div>
+    <div id="creer_site"><a href="p_creer.asp">Cr&eacute;ez votre site</a></div>
+</div>
