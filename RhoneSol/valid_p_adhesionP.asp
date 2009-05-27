@@ -58,7 +58,7 @@ Dim ObjSendMail
     
     'End remote SMTP server configuration section==
          
-   envoi_lien ="<a href=http://www.testoras.com/rhone1/p_confirmation.asp?confirmation=" & session("MailMembre") & "&mdp=" & session("MdpMembre") & " >Lien confirmation adhesion</a>."
+   envoi_lien ="<a href=http://www.rhone-solidarite.com/p_confirmation.asp?confirmation=" & session("MailMembre") & "&mdp=" & session("MdpMembre") & " >Lien confirmation adhesion</a>."
 
          
     ObjSendMail.To = session("MailMembre")
@@ -66,7 +66,7 @@ Dim ObjSendMail
     ObjSendMail.From = "contact@rhone-solidarite.com"
          
     
-    ObjSendMail.HTMLBody = Server.HtmlEncode("Bonjour  <br/> Votre adhésion a bien été enregistré.<br/><br/>Voici vos identifiants :<br/> -login : " & session("MailMembre") & "<br/>-Mot de passe : " & session("MdpMembre") & "<br/><br/>   Cliquez sur le lien suivant pour la valider! <br/><br/>" &  envoi_lien &" <br/><br/>Cordialement.<br/><br/> L'équipe de Rhone-solidarite.")
+    ObjSendMail.HTMLBody = "Bonjour  <br/> Votre adh&eacute;sion a bien &eacute;t&eacute; enregistr&eacute;.<br/><br/>Voici vos identifiants :<br/> -login : " & session("MailMembre") & "<br/>-Mot de passe : " & session("MdpMembre") & "<br/><br/>   Cliquez sur le lien suivant pour la valider! <br/><br/>" &  envoi_lien &" <br/><br/>Cordialement.<br/><br/> L'&eacute;quipe de Rhone-solidarite."
     
     
     ObjSendMail.Send
