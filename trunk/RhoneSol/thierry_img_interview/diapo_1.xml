@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<album
+showbuttons="yes"
+showtitles="yes"
+randomstart="yes"
+timer="5"
+aligntitles="bottom"
+alignbuttons="bottom"
+transition="push"
+speed="20"
+>
+<img src="thierry_img_interview/1_120-200.jpg" />
+<img src="thierry_img_interview/2_120-200.jpg" />
+<img src="thierry_img_interview/3_120-200.jpg" />
+</album> 
