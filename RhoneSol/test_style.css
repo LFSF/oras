@@ -1,0 +1,106 @@
+body
+{
+ font: 11px verdana, sans-serif;
+ background: #FFFFFF url("fond.jpg") top left no-repeat;
+ margin: 0;
+ padding: 0;
+}
+
+
+#menuDeroulant
+{
+ width: 1000px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant li
+{
+ float: left;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant .sousMenu
+{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant .sousMenu li
+{
+ float: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant li
+{
+ float: left;
+ width: 120px;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant li a:link, #menuDeroulant li a:visited
+{
+ display: block;
+ height: 1%;
+ color: #FFF; /* couleur des lettres du menu principal*/
+ background: #69A600 ;
+ margin: 0;
+ padding: 4px 8px;
+ border-right: 1px solid #fff;
+ text-decoration: none;
+}
+#menuDeroulant li a:hover { background-color: #BFC3BF; }
+#menuDeroulant li a:active { background-color: #5F879D; }
+
+#menuDeroulant .sousMenu li a:link,
+#menuDeroulant .sousMenu li a:visited
+{
+ display: block;
+ color: #69A600; /* couleur lettres sous-menusss */
+ margin: 0;
+ border: 0;
+ text-decoration: none;
+ background: transparent url("fondTR.png") repeat;
+}
+#menuDeroulant .sousMenu li a:hover
+{
+ background-image: none;
+ background-color: #BFC3BF;
+}
+#menuDeroulant .sousMenu li
+{
+ float: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ width: 120px;
+ border-top: 1px solid transparent;
+ border-right: 1px solid transparent;
+}
+#menuDeroulant .sousMenu
+{
+ display: none;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant li:hover > .sousMenu { display: block; }
+#menuDeroulant
+
+{
+ width: 1000px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
