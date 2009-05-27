@@ -1,0 +1,770 @@
+/*corps de texte présentation*/
+.text_part1{
+font-size:14px;
+}
+
+.texte_page{
+height:700px;
+width:600px;
+margin-left:40px;
+}
+
+.h_espace_titre{
+background-color:#6FAA08;
+width:80px;
+margin-top:60px;
+}
+
+.titre_page{
+font-size:26px;
+margin-top:-25px;
+margin-left:90px;
+}
+
+.site{
+margin-left:100px;
+font-size:20px;
+border:solid 4px #6FAA08;
+}
+
+.st1{
+text-decoration:underline;
+font-family:"Century Gothic";
+font-size:18px;
+margin-top:-19px;
+margin-left:85px;
+
+}
+
+.st2{
+text-decoration:underline;
+font-family:"Century Gothic";
+font-size:18px;
+margin-top:-19px;
+margin-left:85px;
+
+}
+
+.st3{
+text-decoration:underline;
+font-family:"Century Gothic";
+font-size:18px;
+margin-top:-19px;
+margin-left:85px;
+
+}
+
+.st4{
+text-decoration:underline;
+font-family:"Century Gothic";
+font-size:18px;
+margin-top:-19px;
+margin-left:85px;
+
+}
+
+.d1{
+font-size:14px;
+}
+/*fin corps de texte* présentation*/
+
+
+
+/*début interview*/
+
+.titre_interview{
+font-family: AnkeSans;
+font-size:34px;
+margin-left:30px;
+}
+
+.f_interview{
+font-family: AnkeSans;
+font-size:18px;
+
+}
+
+p.t_intro_interview{
+font-family: "Century Gothic";
+font-size:14px;
+
+}
+
+
+p.question{
+font-family:AnkeSans;
+font-size:14px;
+color:#6FAA08;
+text-decoration:underline;
+
+}
+
+p.réponse{
+font-family: "Century Gothic";
+font-size:12px;
+
+}
+
+.texte_interview{
+height:350px;
+width:450px;
+border: solid 6px #6FAA08;
+}
+
+p.mentions{
+font-family: "Century Gothic";
+font-size:10px;
+
+}
+
+.t_i{
+height:300px;
+width:400px;
+margin:20px;
+}
+
+.intro_interview{
+height:80px;
+width:665px;
+border: solid 2px #6FAA08;
+
+}
+
+.i_i_texte{
+height:70px;
+width:650px;
+font-family:AnkeSans;
+font-size:12px;
+margin:10px;
+}
+
+.foto1{
+background-image:url(img/1_300-300.jpg);
+background-repeat:no-repeat;
+height:120px;
+width:120px;
+border: solid 2px #6FAA08;
+}
+
+.foto2{
+background-image: url(img/1_500-500.jpg);
+background-repeat:no-repeat;
+height:150px;
+width:150px;
+
+border: solid 5px #6FAA08;
+}
+
+.foto3{
+background-image: url(img/2_300-300.jpg);
+background-repeat:no-repeat;
+height:150px;
+width:150px;
+border: solid 5px #6FAA08;
+}
+
+/*fin interview*/
+
+
+
+/*début infos pratiques*/
+
+.titre_infos{
+font-family:AnkeSans;
+font-size:24px;
+margin-left:30px;
+}
+
+/*.h_espace_menu{
+background-color:#6FAA08;
+width:620px;
+margin-left:25px;
+}*/
+
+
+.menu_info{
+font-family: AnkeSans;
+font-size:12px;
+margin-left:-5px;
+margin-top:-17px;
+}
+
+.st{
+font-family:"Century Gothic";
+font-size:18px;
+margin-top:-19px;
+margin-left:85px;
+
+}
+
+
+.hp1{
+height:250px;
+width:250px;
+margin-left:50px;
+
+}
+
+.hp2{
+height:250px;
+width:250px;
+margin-left:350px;
+margin-top:-370px;
+}
+
+.h_espace{
+background-color:#6FAA08;
+width:80px;
+}
+
+.separation_chapitre{
+border:solid 1px #6FAA08;
+margin-left:auto;
+}
+
+.source_h{
+font-size:10px;
+text-align:left;
+margin-top:50px;
+
+}
+.cadre_d_e_p1{
+width:310px;
+margin-left:40px;
+border: solid 2px #6FAA08;
+}
+
+.d_e_p1{
+width:260px;
+margin-left:20px;
+
+}
+
+.cadre_d_e_p2{
+width:310px;
+margin-left:360px;
+margin-top:-950px;
+border: solid 2px #6FAA08;
+}
+
+.d_e_p2{
+width:260px;
+margin-left:20px;
+
+}
+
+.t1{
+font-size:14px;
+text-decoration: underline;
+font-family:AnkeSans;
+color:#6FAA08;
+
+}
+
+.separation_chapitre2{
+border:solid 1px #6FAA08;
+margin-left:auto;
+margin-top:10px
+}
+
+.suite{
+background-image: url(img/postit_vert_petit_penche2.gif);
+height:71px;
+width:71px;
+background-repeat:no-repeat;
+background-position:right;
+}
+
+p.text_suite{
+font-size:14px;
+margin-left:65px;
+margin-top:50px;
+}
+
+p.f1{
+font-size:14px;
+text-decoration:underline;
+}
+
+.text_images{
+margin-left:150px;
+
+}
+
+
+p.mh{
+text-decoration:underline;
+}
+
+p.mdm{
+text-decoration:underline;
+}
+
+p.lpe{
+text-decoration:underline;
+}
+
+.img1{
+background-image:url(img/infopratique_img1.gif);
+height:68px;
+width:101px;
+margin-left:20px;
+
+}
+
+
+.img2{
+background-image:url(img/infopratique_img2.gif);
+height:76px;
+width:101px;
+margin-left:20px;
+}
+
+.img3{
+background-image:url(img/infopratique_img3.gif);
+height:60px;
+width:59px;
+margin-left:20px;
+}
+
+
+p.st_financements{
+font-size:14px;
+text-decoration:underline;
+
+}
+
+p.liste1{
+font-size:13px;
+font-family: "Century Gothic";
+
+}
+/* fin infos pratiques*/
+
+
+
+/*début accueil*/
+
+
+.triple{
+background-image:url(img/3postit.gif);
+height:526px;
+width:580px;
+background-repeat:no-repeat;
+}
+
+
+/*.interview_postit{
+background-image:url(img/postitvert_accueil7.gif);
+height:283px;
+width:280px;
+background-repeat:no-repeat;
+margin-left:220px;
+margin-top:-100px;
+}*/
+
+
+.t_interview{
+font-size:18px;
+font-family:AnkeSans;
+margin-top:-130px;
+margin-left:340px;
+}
+
+.t_text_interview{
+font-size:10px;
+font-family: "Century Gothic";
+height:270px;
+width:230px;
+margin-left:280px;
+margin-top:30px;
+}
+
+.img_interview{
+background-image: url(img/1_120-185.jpg);
+height:120px;
+width:185px;
+margin-top:10px;
+margin-left:10px;
+border: solid #6FA907 3px;
+
+}
+
+/*.internet_postit{
+background-image:url(img/postitvert_accueil2.gif);
+height:283px;
+width:280px;
+background-repeat:no-repeat;
+margin-top:-380px;
+margin-left:380px;
+}*/
+
+.t_internet{
+font-size:16px;
+font-family:AnkeSans;
+margin-top:-480px;
+margin-left:368px;
+}
+
+.t_text_internet{
+font-size:10px;
+font-family: "Century Gothic";
+height:280px;
+width:250px;
+margin-left:320px;
+margin-top:30px;
+text-align:center;
+}
+
+p.lien_site{
+font-size:12px;
+}
+
+/*.presentation_postit{
+background-image:url(img/postitvert_accueil7.gif);
+height:298px;
+width:280px;
+background-repeat:no-repeat;
+margin-top:-5px;
+margin-left:0px;
+}*/
+
+.t_presentation{
+font-size:17px;
+font-family:AnkeSans;
+margin-top:100px;
+margin-left:10px;
+
+}
+
+.t_text_presentation{
+font-size:10px;
+font-family: "Century Gothic";
+color:#000000;
+height:270px;
+width:240px;
+margin-left:80px;
+margin-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*fin accueil*/
+.txt
+{
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A.txt:link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.txt:visited
+{
+    FONT-WEIGHT: bold;f
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.txt:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.txt:active
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.fdtab
+{
+    BACKGROUND-POSITION: left top;
+    BACKGROUND-IMAGE: url(img/communs/orasfond.gif);
+    BACKGROUND-REPEAT: no-repeat
+}
+.fdtabbas
+{
+    BACKGROUND-IMAGE: url(img/communs/bas2.gif);
+    BACKGROUND-REPEAT: repeat-y
+}
+.fdtabhaut
+{
+    BACKGROUND-IMAGE: url(img/communs/bas3.gif);
+    BACKGROUND-REPEAT: repeat-y
+}
+.txtptrouges
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A.txtptrouges:link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.txtptrouges:visited
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.txtptrouges:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.txtptrouges:active
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.txtptgris
+{
+    FONT-SIZE: 8px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A.txtptgris:link
+{
+    FONT-SIZE: 10px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.txtptgris:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.txtptgris:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.txtptgris:active
+{
+    FONT-SIZE: 10px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.lien:
+{
+    COLOR: #394248;
+    TEXT-DECORATION: none
+}
+A.lien:link
+{
+    COLOR: #394248;
+    TEXT-DECORATION: none
+}
+A.lien:visited
+{
+ COLOR: #394248;
+    TEXT-DECORATION: none
+}
+A.lien:hover
+{
+    COLOR: #0000cc;
+    TEXT-DECORATION: none
+}
+LI
+{
+    LIST-STYLE-POSITION: outside;
+    LIST-STYLE-IMAGE: url(img/communs/pucept.gif)
+}
+.contourtableau
+{
+    BORDER-RIGHT: #c8c8c8 1px solid;
+    BORDER-TOP: #c8c8c8 1px solid;
+    BORDER-LEFT: #c8c8c8 1px solid;
+    BORDER-BOTTOM: #c8c8c8 1px solid
+}
+BODY
+{
+    BACKGROUND-COLOR: #bcb1a6;
+}
+.contourtabbas
+{
+    BORDER-TOP-WIDTH: 1px;
+    BORDER-RIGHT: #c8c8c8 1px solid;
+    BORDER-LEFT: #c8c8c8 1px solid;
+    BORDER-TOP-COLOR: #c8c8c8;
+    BORDER-BOTTOM: #c8c8c8 1px solid
+}
+.contourtabhaut
+{
+    BORDER-RIGHT: #c8c8c8 1px solid;
+    BORDER-TOP: #c8c8c8 1px solid;
+    BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-BOTTOM-COLOR: #c8c8c8;
+    BORDER-LEFT: #c8c8c8 1px solid
+}
+A.txtlight:link
+{
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.txtlight:visited
+{
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.txtlight:hover
+{
+    FONT-SIZE: 11px;
+    COLOR: #b92432;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.txtlight:active
+{
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+DIV.txt
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+DIV.txtsimple
+{
+   
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+DIV.sigle
+{
+    LEFT: 105px;
+    POSITION: absolute;
+    TOP: 10px
+}
+DIV.paragraphe1
+{
+	width:670;
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: gray 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 13px;
+    BORDER-LEFT: gray 1px solid;
+    COLOR: #394248;
+    BORDER-BOTTOM: gray 1px solid;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+DIV.paragraphebordseul
+{
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: gray 1px solid;
+    BORDER-LEFT: gray 1px solid;
+    BORDER-BOTTOM: gray 1px solid
+}
+
+
+TABLE.txt
+{
+	background:#ffffff;
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+	font-weight:bold;
+    FONT-FAMILY: century gothic; /*Verdana, Arial, Helvetica, sans-serif;*/
+    /*BORDER-LEFT-COLOR: #acce6f;
+    BORDER-BOTTOM-COLOR: #acce6f;
+    BORDER-TOP-COLOR: #acce6f;
+    BORDER-RIGHT-COLOR: #acce6f;*/
+}
+TABLE.txt2
+{
+	background:#fff url(img/haut_epingle.gif);
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: century gothic; /*Verdana, Arial, Helvetica, sans-serif;*/
+    /*BORDER-LEFT-COLOR: #acce6f;
+    BORDER-BOTTOM-COLOR: #acce6f;
+    BORDER-TOP-COLOR: #acce6f;
+    BORDER-RIGHT-COLOR: #acce6f;*/
+}
+TABLE.txt1
+{
+    FONT-SIZE: 11px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+   
+}
+TABLE.admin
+{
+    FONT-SIZE: 10px;
+    COLOR: #394248;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+   
+}
+DL.paragraphe1
+{
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: gray 1px solid;
+    BORDER-LEFT: gray 1px solid;
+    BORDER-BOTTOM: gray 1px solid
+}
+TD.style
+{
+	width:400;
+	FONT-SIZE: 20px;
+    COLOR: #394248;
+    FONT-FAMILY: century gothic; /*Verdana, Arial, Helvetica, sans-serif;*/
+}
+TR.styl
+{
+	FONT-SIZE: 16px;
+    COLOR: #394248;
+    FONT-FAMILY: century gothic; /*Verdana, Arial, Helvetica, sans-serif;*/
+}
+
+
+
+
