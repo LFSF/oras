@@ -1,0 +1,51 @@
+<!-- Auteur de la page -->
+<meta name="author" content="oras" />
+<!-- Description de la page -->
+<meta name="description" content="commerce equitable avec les pays du sud" />
+<!-- Mots-clés de la page -->
+<meta name="keywords" content="rhone solidarite, commerce equitable, commerce solidaire, afrique centrale, afrique economie, association, blog economie solidaire, forum solidaire" />
+<meta name="keywords" content="forum equitable, commerce nord sud, commerce solidaire, economie solidaire, commerce ethique, echange solidaire, creer son blog, creer site association" />
+<meta name="keywords" content="valorisation projet, rhone-alpes, commerce equitable lyon, montage projet association, collectivite locale, achat public responsable" />
+<meta name="keywords" content="association commerce equitable rhone-alpes, commerce equitable afrique centrale, commerce solidaire afrique, actualite commerce equitable" />
+<meta name="keywords" content="solidarite afrique, solidarite internationale, conseil association, recherche financement projet association, interview association" />
+<!-- Adresse de contact -->
+<meta name="reply-to" content="contact@rhone-solidarite.com" />
+<!-- Empêcher la mise en cache de la page par le navigateur -->
+<meta http-equiv="pragma" content="no-cache" />
+<!-- Table de caractères -->
+
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+<!--
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+-->
+
+
+<%
+
+Function CurrentURL()
+     
+     Dim Temp
+     Temp = "http://" & Request.ServerVariables("SERVER_NAME")
+     Temp = Temp & Request.ServerVariables("SCRIPT_NAME")
+     
+     If Request.ServerVariables("QUERY_STRING") <> "" Then
+          Temp = Temp & "?" & Request.ServerVariables("QUERY_STRING")
+     End If
+     
+     CurrentURL = Temp
+     
+End Function
+
+
+
+%> 
+
+
+<!-- Rafraîchissement automatique au bout de 10 secondes -->
+<!--
+<meta http-equiv="refresh" content="10; URL=<%=CurrentURL%>" />
+
+-->
+
