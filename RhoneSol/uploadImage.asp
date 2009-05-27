@@ -12,7 +12,8 @@ Server.ScriptTimeout = 600
   Dim uploadsDirVar
 
   'Repertoire d'upload du membre connecté
-  uploadsDirVar=Server.MapPath("fichiers_upload/img_article/"&session("admin_email")&"_"&session("admin_nom")&"/")
+  session("admin_email")
+  uploadsDirVar=Server.MapPath("fichiers_upload/img_article/"&session("imgdirpath")&"/")
 
 ' ****************************************************
 

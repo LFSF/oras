@@ -52,7 +52,7 @@
 
   Set FSO = server.createObject("Scripting.FileSystemObject")
 
-  Folder = dir&"/"&session("MailMembre")&"_"&session("NomMembre")&"/"
+  Folder = dir&"/"&session("imgdirpath")&"/"
 
   If Not FSO.FolderExists(Folder) Then
       FSO.CreateFolder(Folder)

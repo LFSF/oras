@@ -65,6 +65,7 @@ else
                       session("acces_id")=rsED1("IDVisu") 
                       session("acces_off")=rsED1("OffVisu")
                       session("admin_id")=rsED1("NumMembre")
+					  session("imgdirpath")=replace(session("admin_email"),"@","_")&"_"&session("admin_nom")
                       session.Timeout = 30
                       'session("admin_id")=rsED1("NumAdmin")
                       Response.Redirect("p_admin.asp")
@@ -92,6 +93,7 @@ else
                       session("acces_id")=rsED1("IDVisu") 
                       session("acces_off")=rsED1("OffVisu")
                       session("admin_id")=rsED1("NumMembre")
+					  session("imgdirpath")=replace(session("admin_email"),"@","_")&"_"&session("admin_nom")
                       session.Timeout = 30
                       'session("admin_id")=rsED1("NumAdmin")
                       Response.Redirect("p_admin.asp")

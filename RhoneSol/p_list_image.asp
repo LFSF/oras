@@ -51,7 +51,7 @@ function check_file(){
 <!-- #include file="util.asp"-->
 <%
 Dim pathdir
-pathdir= "fichiers_upload/img_article/"&session("admin_email")&"_"&session("admin_nom")&"/"
+pathdir= "fichiers_upload/img_article/"&session("imgdirpath")&"/"
 
 
 'Envoi du filtre
