@@ -418,7 +418,7 @@ if ( (arobase < 1) ||
 
 
                 <tr>
-                    <td colspan="2"><% =Server.HtmlEncode("La Cooperation décentralisée.")%></td>
+                    <td colspan="2"><% =Server.HtmlEncode("La Coopération décentralisée.")%></td>
                     <td><input name="CooperationMembre" type="checkbox" id="CooperationMembre" /></td>
                 </tr>
 
@@ -463,7 +463,7 @@ if ( (arobase < 1) ||
             <br />
             <table width="100%" border="0" cellpadding="0" cellspacing="0" class="txt">
                 <tr>
-                    <td colspan="2">Je souhaite m'inscrire a la Newsletter</td>
+                    <td colspan="2">Je souhaite m'inscrire &agrave; la Newsletter</td>
                     <td><input name="News" type="checkbox" id="checkbox" /></td>
 
                 </tr>
@@ -472,7 +472,7 @@ if ( (arobase < 1) ||
                 %>
                 <tr>
 
-                    <td colspan="2"><% =Server.HtmlEncode("Je souhaite écrire des articles dans votre pages actualités.")%></td>
+                    <td colspan="2"><% =Server.HtmlEncode("Je souhaite écrire des articles.")%></td>
 
                     <td><input name="RedacteurMembre" type="checkbox" checked=true id="RedacteurMembre" /></td>
 
@@ -480,7 +480,7 @@ if ( (arobase < 1) ||
                 <%else%>
                 <tr>
 
-                    <td colspan="2"><% =Server.HtmlEncode("Je souhaite écrire des articles dans votre pages actualités.")%></td>
+                    <td colspan="2"><% =Server.HtmlEncode("Je souhaite écrire des articles.")%></td>
 
                     <td><input name="RedacteurMembre" type="checkbox"  id="RedacteurMembre" /></td>
 

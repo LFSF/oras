@@ -66,7 +66,7 @@ Dim ObjSendMail
     ObjSendMail.From = "contact@rhone-solidarite.com"
          
     
-    ObjSendMail.HTMLBody = "Bonjour  <br/> Votre adh&eacute;sion a bien &eacute;t&eacute; enregistr&eacute;.<br/><br/>Voici vos identifiants :<br/> -login : " & session("MailMembre") & "<br/>-Mot de passe : " & session("MdpMembre") & "<br/><br/>   Cliquez sur le lien suivant pour la valider! <br/><br/>" &  envoi_lien &" <br/><br/>Cordialement.<br/><br/> L'&eacute;quipe de Rhone-solidarite."
+    ObjSendMail.HTMLBody = "Bonjour  <br/> Votre adh&eacute;sion a bien &eacute;t&eacute; enregistr&eacutee;.<br/><br/>Voici vos identifiants :<br/> -login : " & session("MailMembre") & "<br/>-Mot de passe : " & session("MdpMembre") & "<br/><br/>   Cliquez sur le lien suivant pour la valider! <br/><br/>" &  envoi_lien &" <br/><br/>Cordialement.<br/><br/> L'&eacute;quipe de Rh&ocirc;ne-solidarit&eacute;."
     
     
     ObjSendMail.Send
