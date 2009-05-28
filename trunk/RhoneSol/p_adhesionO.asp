@@ -409,7 +409,7 @@ if ( (arobase < 1) ||
 
 
 <tr>
-	<td colspan="2">La Cooperation décentralisée.</td>
+	<td colspan="2">La Coop&eacute;ration d&eacute;centralisée.</td>
 	<td><input name="CooperationMembre" type="checkbox" id="CooperationMembre" /></td>
 </tr>
 
@@ -462,7 +462,7 @@ if ( (arobase < 1) ||
 
 
 <tr>
-	<td colspan="2">Je souhait m'inscrire a la Newsletter</td>
+	<td colspan="2">Je souhait m'inscrire &agrave; la Newsletter</td>
 
 	<td><input name="News" type="checkbox" id="checkbox" /></td>
 
@@ -471,7 +471,7 @@ if ( (arobase < 1) ||
 
 <tr>
 
-	<td colspan="2">Je souhaite écrire des articles dans votre pages actualités.&nbsp;</td>
+	<td colspan="2">Je souhaite écrire des articles.&nbsp;</td>
 
 	<td><input name="RedacteurMembre" type="checkbox" id="RedacteurMembre" /></td>
 

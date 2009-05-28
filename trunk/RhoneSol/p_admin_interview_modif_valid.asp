@@ -4,7 +4,7 @@
 	response.redirect("p_admin.asp")
 	else
 %>
-<% if not(Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_admin_interview_modif.asp" then
+<% if not(Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_admin_interview_modif.asp") then
 	response.redirect("http://www.rhone-solidarite.com/p_admin_actu_visualisation.asp")
 else
 %>
@@ -33,7 +33,7 @@ else
 	//-->
 	</script>
 
-	<SCRIPT language=JavaScript> 
+	<SCRIPT language="JavaScript"> 
 	function fonctest()
 	{
 	window.location.href="espaceadh.asp"
@@ -57,7 +57,7 @@ else
 %>
 <body  bgcolor="#bcbaa6" onload="init()" leftmargin="0" topmargin="8" marginwidth="0" marginheight="0" >
 <%else%>
-<body  bgcolor="#bcbaa6"  leftmargin="0" topmargin="8" marginwidth="0" marginheight="0" >
+<body bgcolor="#bcbaa6" leftmargin="0" topmargin="8" marginwidth="0" marginheight="0" >
 <!--<div style="z-index:5;" -->
 
 <%end if
@@ -67,9 +67,10 @@ simplecot="&#039;"
 
 
 
-rsPost = "UPDATE INTERVIEW SET CodeValidItw='non' AND DateValidItw='" & Date() & "' WHERE NumItw=" & Request.Querystring("num") & ""
+rsPost = "UPDATE INTERVIEW SET CodeValidItw=Yes WHERE NumItw=" & Request.Querystring("num") & ""
 
 Conn.Execute(rsPost)
+majDate()
 
 <!-- #include file="deconnexion.asp"-->
 
