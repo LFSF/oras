@@ -18,13 +18,14 @@
 <div id="bandeau_orange">REJOIGNEZ NOUS!</div>
 
 <p>Adhésion____________________________________________________________________</p>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
-
-<p><img src="img/menu/bouton_orange.gif" /><a href="p_adhesionP.asp"> <font style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:12px">Particulier</font></a></p>
-<p><img src="img/menu/bouton_orange.gif" /><a href="p_adhesionO.asp"> <font style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:12px">Organisme</font></a></p>
-
+<div align="center">
+<p><img src="img/menu/bouton_orange.gif" /><a href="p_adhesionP.asp"> <font face="Lucida Handwriting" color="#6faa07" size="6">Particulier</font></a></p>
+<br/><br/>
+<p><img src="img/menu/bouton_orange.gif" /><a href="p_adhesionO.asp"> <font face="Lucida Handwriting" color="#6faa07" size="6">Organisme</font></a></p>
+</div>
 
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
