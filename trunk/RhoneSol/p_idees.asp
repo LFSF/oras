@@ -4,11 +4,11 @@
 <head>
 <!-- #include file="grand_meta.txt"-->
 <!-- #include file="connexion.asp"-->
-<title>Rh&ocirc;ne-solidarit&eacute;</title>
+<title>Rhône-solidarité</title>
 
 <script type="text/javascript" src="scripts/wysiwyg.js"></script>
 <script type="text/javascript">
-WYSIWYG.attach('all');
+WYSIWYG.attach('all')
 </script>
 
 <script language="JavaScript" type="text/javascript">
@@ -28,16 +28,15 @@ if(document.contact.nom.value == "")
   document.contact.prenom.focus();
   return false;
  }
-  
+ 
   if(document.contact.email.value == "")
  {
   alert("Merci d'indiquer votre adresse email.");
   document.contact.email.focus();
   return false;
  }
- 
- 
-//vérifie qu'il s'agie bien d'un mail (présence de @ et . obligatoire) 
+  
+ //vérifie qu'il s'agie bien d'un mail (présence de @ et . obligatoire) 
 adresse_email = document.contact.email.value;
 arobase = adresse_email.indexOf("@");
 point = adresse_email.indexOf(".",arobase);
@@ -57,41 +56,34 @@ if ( (arobase < 1) ||
     document.contact.email.focus();
 	return false;
 	}
+
+	
+ 
+ 
+ 
   if(document.contact.telephone.value == "")
  {
-  alert("Merci d'indiquer votre tÃƒÂ©lÃƒÂ©phone.");
+  alert("Merci d'indiquer votre téléphone.");
   document.contact.telephone.focus();
   return false;
  }
-    if(document.contact.checkbox.checked == false)
+
+ 
+ /*if (document.contact.message.value == "" || document.contact.message.value == "<br>")
  {
-  alert("Merci de cocher la cases si vous souhaitez devenir partenaire.");
-  document.contact.checkbox.focus();
-  return false;
- }
+   alert("Veuillez saisir un message.");
+   document.contact.message.focus();
+   return false;
+ }*/
+ 
 }
 //-->
 //]]>
 </script>
 
 
- <script language="JavaScript">
-
-function fonc2()
-{
-if((event.keyCode<48)||(event.keyCode>57))
-
-	{
-	// alert(window.event.keyCode);
-	alert("Attention uniquement des chiffres !");
-	event.returnValue=false;
-	}
-}
-
-</script>
-
-
 <%
+	Civ = "madame"
 if session("numMembre") <> "" then
 set rsM = Conn.Execute("SELECT * FROM Membre WHERE NumMembre = " & session("numMembre") & "")
 Nom =rsM("NomMembre")
@@ -99,12 +91,24 @@ Prenom =rsM("PrenomMembre")
 Mail =rsM("MailMembre")
 Tel =rsM("TelMembre")
 end if
+
+if (Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/verif_p_idees.asp") or (Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_idees.asp") then
+	
+	Civ = session("idee_civ")
+	Nom = session("idee_nom")
+	Prenom = session("idee_prenom")
+	Mail = session("idee_mail")
+	Tel = session("idee_telephone")
+	Fonc = session("idee_fonction") 
+	Org = session("idee_organisme")
+end if
 %>
 
 
 <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<!-- #include file="FCKeditor/fckeditor.asp" -->
 <!-- #include file="grand_header.txt"-->
 <div id="contenu"><!-- #include file="fichier_menu.txt"-->
 <div id="bandeau_orange">Idées Suggestions</div>
@@ -121,19 +125,39 @@ INSERTION  TABLE FORMULAIRE A MODIFIER
 <td width="439" valign="top" class="txt">
 <div align="justify"><br />
 <form action="verif_p_idees.asp" method="post" id="contact" name="contact" onsubmit="return verifform()">
-<p><strong>Une idée? Une suggestions , Une critique ou un encouragement; n'hésitez pas à  nous en faire part en remplissant le formulaire suivant!.  Attention l'email doit etre valide .</strong><br /></p>
+<p><strong>Une idée? Une suggestions , Une critique ou un encouragement; n'hésitez pas à nous en faire part en remplissant le formulaire suivant!.  Attention l'email doit &ecirc;tre valide .</strong><br /></p>
 <table border="0" width="100%" cellpadding="0" cellspacing="0" class="txt">
 <tr>
 <td>Civilité</td>
 <td>
 <table border="0" cellspacing="0" cellpadding="0" class="txt">
 <tr>
-
-<td><input name="civilite" type="radio" value="madame" checked="checked" /></td>
+	
+<td><%
+		if Civ ="madame" then 
+			response.write ("<input name='civilite' type='radio' value='madame' checked='checked' />")
+		else
+			response.write ("<input name='civilite' type='radio' value='madame'/>")
+		end if
+	%>
+</td>
 <td>Mme&nbsp;</td>
-<td><input type="radio" name="civilite" value="mademoiselle" /></td>
+<td><%
+		if Civ ="mademoiselle" then 
+			response.write ("<input name='civilite' type='radio' value='mademoiselle' checked='checked' />")
+		else
+			response.write ("<input name='civilite' type='radio' value='mademoiselle'/>")
+		end if
+	%>
+</td>
 <td>Mlle&nbsp;</td>
-<td><input type="radio" name="civilite" value="monsieur" /></td>
+<td><%
+		if Civ ="monsieur" then 
+			response.write ("<input name='civilite' type='radio' value='monsieur' checked='checked' />")
+		else
+			response.write ("<input name='civilite' type='radio' value='monsieur'/>")
+		end if
+	%></td>
 <td>Mr&nbsp;</td>
 </tr>
 </table>
@@ -155,19 +179,19 @@ INSERTION  TABLE FORMULAIRE A MODIFIER
 
 <tr>
 <td width="30%" class="textes">Fonction</td>
-<td><input name="fonction" class="txt" size="30" maxlength="50" /></td>
+<td><input name="fonction" class="txt" size="30" maxlength="50" value="<%=Fonc%>" /></td>
 </tr>
 <tr>
-<td class="textes">Association / Organisme</td>
-<td><input name="organisme" class="txt" size="30" maxlength="50" /></td>
+<td class="textes">Association / Organisme*</td>
+<td><input name="organisme" class="txt" size="30" maxlength="50" value="<%=Org%>" /></td>
 </tr>
 
 
 
 
 <tr>
-<td class="textes">Téléphone </td>
-<td><input onkeypress="return fonc2()" name="telephone" class="txt" id="telephone" size="30" maxlength="50" value="<%=Tel%>"/></td>
+<td class="textes">Téléphone* </td>
+<td><input  name="telephone" class="txt" id="telephone" size="30" maxlength="50" value="<%=Tel%>" onKeypress="if((event.keyCode < 45 || event.keyCode > 57) && event.keyCode > 31 && event.keyCode != 43) event.returnValue = false; if((event.which < 45 || event.which > 57) && event.which > 31 && event.which != 43) return false;"/></td>
 </tr>
 
 <tr>
@@ -197,17 +221,20 @@ INSERTION  TABLE FORMULAIRE A MODIFIER
 </tr>
 <tr>
 <td colspan="2"><br />
-
-
 </td>
 </tr>
 <tr>
 <td colspan="2">Message :</td>
 </tr>
+<%
+
+	if (Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/verif_p_idees.asp") or (Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_idees.asp") then
+		response.write("<b><font color = red>Veuillez saisir votre id&eacute;e</font></br>")
+	end if
+%>
 <tr>
 <td colspan="2">
-<textarea class="txt" id="message" name="message" rows="10" cols="60">
-</textarea></td>
+<textarea class="txt" id="message" name="message" rows="10" cols="60"></textarea></td>
 </tr>
 <tr>
 <td colspan="2">&nbsp;</td>
@@ -238,7 +265,7 @@ INSERTION  TABLE FORMULAIRE A MODIFIER
 </tr>
 </table>
 <!-- 
-Ne pas toucher Ãƒ  ce qui suit : placement du footer 
+Ne pas toucher Ã  ce qui suit : placement du footer 
 -->
 <!-- #include file="grand_footer.txt"-->
 

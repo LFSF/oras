@@ -62,7 +62,7 @@
       %>
       <%
                   IF rsED.EOF Then
-                  Response.Write("Il n'y a aucune idée / suggestion pour le moment ")
+                  Response.Write("Il n'y a aucune id&eacute;e / suggestion pour le moment ")
                   Else
                   While Not rsED.EOF
        %>

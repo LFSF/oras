@@ -10,7 +10,7 @@
 
 <%
 if not(Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_admin_actu_modif.asp" or Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_admin_actu_visualisation.asp") then
-	response.redirect("http://www.rhone-solidarite.com/p_admin_actu_visualisation.asp")
+	response.redirect("http://www.rhone-solidarite.com/p_admin_actu.asp")
 else
 Dim rsA
 Set rsA = Conn.Execute("SELECT * FROM ACTUALITE WHERE NumActu = " & Request.Querystring("num") & "") 
@@ -59,6 +59,12 @@ next%>
 
 
 <!-- #include file="deconnexion.asp"-->
-<%Response.Redirect("p_admin_actu.asp")%>
+<% 
+	if (Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_admin_actu_modif.asp") then
+		Response.Redirect("p_admin_actu_modif.asp")
+	else
+		Response.Redirect("p_admin_actu_visualisation.asp")
+	end if
+%>
 <%end if%>
 <% end if %>

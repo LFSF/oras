@@ -53,6 +53,7 @@
           <td>
             <table width="100%" border="0" cellspacing="0" cellpadding="2">
 <%
+	session("actu_del") = "v"
     Dim Place
     Place = 0
     Set rsED = Conn.Execute("SELECT * FROM ACTUALITE where Visible=1 ORDER BY DateActu DESC")
