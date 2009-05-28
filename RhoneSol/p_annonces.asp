@@ -29,12 +29,12 @@ function verif(){
 <style type="text/css">
 @import 'test.css';
 </style>
-<script type="text/javascript" src="http://www.letudiant.fr/file/resources/etu/front/js/jquery-1.2.1.pack.js"></script>
-<script type="text/javascript" src="http://www.letudiant.fr/file/resources/etu/front/js/jquery.pager_home.js"></script>
+<script type="text/javascript" src="js/jquery-1.2.1.pack.js"></script>
+<script type="text/javascript" src="js/jquery.pager_home.js"></script>
 
-<script type="text/javascript" src="http://www.letudiant.fr/file/resources/etu/front/js/jquery.accordion.pack.js"></script>
-<script type="text/javascript" src="http://www.letudiant.fr/file/resources/etu/front/js/jquery.bgiframe.pack.js"></script>
-<script type="text/javascript" src="http://www.letudiant.fr/file/resources/etu/front/js/jquery.tabs.pack.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.pack.js"></script>
+<script type="text/javascript" src="js/jquery.bgiframe.pack.js"></script>
+<script type="text/javascript" src="js/jquery.tabs.pack.js"></script>
 <script type="text/javascript">
 
 //<![CDATA[

@@ -68,6 +68,7 @@ if Request.QueryString("retour")<>"" then
     Response.write "</td></tr>"
 end if
 %>
+				
                 <tr >
                     <td>Choisissez une image:</td><td><input type="file" name="attach1" id="theFile" /></td>
                 </tr>

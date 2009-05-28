@@ -63,6 +63,8 @@ RS.addnew
  RS("AutresMembre")=replace(REPLACE(session("AutresMembre"),"""",espace),"'",simplecot)
  RS("MessageMembre")=replace(REPLACE(session("MessageMembre"),"""",espace),"'",simplecot)
  RS("DateMembre")=replace(REPLACE(date,"""",espace),"'",simplecot) 
+ session("ImgPathDir")=session("NumMembre")&"_"&replace(replace(REPLACE(session("MailMembre"),"""",espace),"'",simplecot),"@","_")
+ RS("ImgPathDir")=session("ImgPathDir")
  RS("AdhesionMembre")="non"
  RS("Entreprise")=1
  RS("AdminMembre")=0
@@ -114,6 +116,18 @@ RS1.addnew
  RS1("OffValid")=0
   
  RS1.update
+ 
+  'Création du dossier pour l'upload des images
+  Dim dir
+  dir=Server.MapPath("fichiers_upload/img_article/")
+
+  Set FSO = server.createObject("Scripting.FileSystemObject")
+
+  Folder = dir&"/"&session("ImgPathDir")&"/"
+
+  If Not FSO.FolderExists(Folder) Then
+      FSO.CreateFolder(Folder)
+  End If
 
 response.redirect("valid_p_adhesionO.asp")
 %>

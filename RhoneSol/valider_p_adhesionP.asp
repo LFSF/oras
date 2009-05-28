@@ -6,8 +6,11 @@
   espace="&#034;"
   simplecot="&#039;"
 
+  'Creation de la variable session imgpathdir
+  session("ImgPathDir")=session("NumMembre")&"_"&replace(session("MailMembre"),"@","_")
+
   'Enregistrement des valeurs dans un tableau pour la creation de la base de donnee
-  nameTab=Array("NomMembre","PrenomMembre","TelMembre","MailMembre","AdrMembre","MdpMembre","News","CivMembre","VilleMembre","CPMembre","FonctionMembre","OrganismeMembre","PaysMembre","PartenaireMembre","CooperationMembre","SolidaireMembre","FormationMembre","AutreMembre","RedacteurMembre","InterviewMembre","EcrireItwMembre","CreationsiteMembre","AutresMembre","MessageMembre")
+  nameTab=Array("NomMembre","PrenomMembre","TelMembre","MailMembre","AdrMembre","MdpMembre","News","CivMembre","VilleMembre","CPMembre","FonctionMembre","OrganismeMembre","PaysMembre","PartenaireMembre","CooperationMembre","SolidaireMembre","FormationMembre","AutreMembre","RedacteurMembre","InterviewMembre","EcrireItwMembre","CreationsiteMembre","AutresMembre","MessageMembre","ImgPathDir")
   
   sqlInsert="INSERT INTO MEMBRE ("
   for i=0 to Ubound(nameTab)-1
