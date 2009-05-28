@@ -32,7 +32,7 @@ end if
 
 <!-- #include file="admin_securite.asp"-->
 <!-- #include file="connexion.asp"-->
-<!-- #include file="FCKeditor/fckeditor.asp" -->
+
 <!-- #include file="grand_header.txt"-->
 
 <%

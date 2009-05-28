@@ -73,7 +73,22 @@ window.location.href='ndambog.asp'
 </SCRIPT>
 <script type="text/javascript" language="javascript" src="infobulle.js"></script>
 </head>
+<%
+titre = trim(request.form("titre"))
+message = trim(request.form("message"))
 
+titreNonVide=true
+messageNonVide=true
+
+if titre="" then
+titreNonVide=false
+end if
+
+if message="<br>" or message="" then
+messageNonVide=false
+end if
+
+%>
 <body>
 <!-- #include file="grand_header.txt"-->
 
@@ -108,8 +123,14 @@ window.location.href='ndambog.asp'
                     <td class="txt1"><font color="#969696">Date :</font></td>
                     <td><% =request.form("date")%><%session("date")=request.form("date")%></td>
                   </tr>
-                  <tr> 
-                    <td class="txt1"><font color="#969696">Titre :</font></td>
+				  
+                  <tr>      	                 
+                  
+                  <% if titreNonVide then%>
+                  <td class="txt1"><font color="#969696">Titre :</font></td>             
+                   <%else%>             
+                  <td class="txt1"><font color="#FF0000">Titre non saisie :</font> </td>  
+                  <% end if %>
                     <td><% =request.form("titre")%><%session("titre")=request.form("titre")%></td>
                   </tr>
                  
@@ -120,12 +141,16 @@ window.location.href='ndambog.asp'
                   
                
                   <tr> 
-                    <td valign="top" colspan="2"><font color="#969696">Message : </font><br/><br/><br/>&nbsp;
-                  </td>
+				   <% if messageNonVide then %>
+                    <td valign="top" colspan="2"><font color="#969696">Message : </font><br/><br/><br/>&nbsp;</td>
+				   <%else%> 
+				    <td valign="top" colspan="2"><font color="#FF0000">Message non saisie :</font> </td>  
+                  <% end if %>
                   </tr>
                   
                   <tr>
-                    <td colspan="2"><%
+                    <td colspan="2">
+					                 <%
                                         Response.Write request.form("message")
 
                                         session("MessageActu")=request.form("message")
@@ -154,8 +179,9 @@ window.location.href='ndambog.asp'
     <br/>
  <br/>  
                     <INPUT TYPE="BUTTON" style="width:75" VALUE="Modifier" onClick="location.href='p_admin_actu_insert.asp'" >
-
+                    <%if messageNonVide and titreNonVide then%>
                     <input name="creer" style="width:75" type=submit value="Créer" >
+					<%end if%>
 </form>
 
                     </td>

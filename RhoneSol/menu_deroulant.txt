@@ -74,6 +74,6 @@ if rsEDverifstat("Entreprise")=1 then
 <% end if %>
 
 <% if (session("admin_acces_admin")= 1 or session("acces_news")= 1)  then %>
-<li><a href="p_admin_newsletter_insert.asp">News</a></li>
+<li><a href="p_admin_newsletter_insert.asp">Newsletter</a></li>
 <%end if %>
 </ul>

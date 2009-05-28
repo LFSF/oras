@@ -24,6 +24,22 @@
 </table>
 
 <%
+message = trim(request.form("message"))
+
+if message = "<br>" or message ="" then
+
+	session("idee_civ") = request.form("civilite")
+	session("idee_nom") = request.form("nom")
+	session("idee_prenom") = request.form("prenom")
+	session("idee_fonction") = request.form("fonction")
+	session("idee_organisme") = request.form("organisme")
+	session("idee_mail") = request.form("email")
+	session("idee_telephone") = request.form("telephone")
+	
+	response.redirect("p_idees.asp")
+	
+end if
+
  if (request.form("checkbox")="on")then
  
 session("a_checkbox")="oui"

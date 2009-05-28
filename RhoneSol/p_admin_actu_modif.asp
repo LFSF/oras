@@ -48,6 +48,7 @@
 
 <table width="100%" border="0" cellspacing="0" cellpadding="2">
 	<%
+	session("actu_del") = "m"
 	Dim Place
 	Place = 0
 
@@ -119,7 +120,7 @@ rsED.Close
 	Dim Place1
 	Place1 = 0
 
-	Set rsED1 = Conn.Execute("SELECT ACTUALITE.* FROM ACTUALITE INNER JOIN MEMBRE ON ACTUALITE.NumMembre = MEMBRE.NumMembre WHERE ((MEMBRE.NumMembre)=" & session("admin_id") & " AND ((ACTUALITE.Visible)=0));")
+	Set rsED1 = Conn.Execute("SELECT ACTUALITE.* FROM ACTUALITE INNER JOIN MEMBRE ON ACTUALITE.NumMembre = MEMBRE.NumMembre WHERE ((MEMBRE.NumMembre)=" & session("admin_id") & " AND ((ACTUALITE.Visible)=1));")
 
 	While Not rsED1.EOF
 
