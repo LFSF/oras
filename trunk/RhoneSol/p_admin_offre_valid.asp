@@ -1,5 +1,6 @@
 
 <!-- #include file="admin_securite.asp"-->
+<!-- #include file="FCKeditor/fckeditor.asp" -->
 <% if not (session("admin_acces_admin")=1 or session("acces_off")= 1) then
 	response.redirect("p_admin.asp")
 	else
@@ -24,8 +25,6 @@
 </SCRIPT>-->
 <%end if%>
 
-
-<!-- #include file="FCKeditor/fckeditor.asp" -->
 
 
 <%

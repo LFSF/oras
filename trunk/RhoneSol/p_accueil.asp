@@ -157,7 +157,18 @@ end if
     <table cellspacing="5px">
         <tr>
             <td width="295px" align="justify" valign="top">
+			<%
+				if not (ITWMOIS="Il n'y a pas d'interview ce mois-ci") then
+			%>
                 <a href="p_interview.asp"> <%=Server.HtmlEncode(ITWMOIS)%> </a>
+			<%
+				else
+			%>
+					<%=Server.HtmlEncode(ITWMOIS)%> <br><br>
+					<a href="p_interview.asp">Consulter l'interview du mois précédent</a>
+			<%	
+				end if 
+			%>
             </td>
             <td width="145px">
             

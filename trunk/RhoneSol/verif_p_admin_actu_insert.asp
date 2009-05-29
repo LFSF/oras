@@ -77,15 +77,15 @@ window.location.href='ndambog.asp'
 titre = trim(request.form("titre"))
 message = trim(request.form("message"))
 
-titreNonVide=true
-messageNonVide=true
+titreNonVide=false
+messageNonVide=false
 
 if titre="" then
-titreNonVide=false
+titreNonVide=true
 end if
 
 if message="<br>" or message="" then
-messageNonVide=false
+messageNonVide=true
 end if
 
 %>
@@ -126,10 +126,10 @@ end if
 				  
                   <tr>      	                 
                   
-                  <% if titreNonVide then%>
+                  <% if not titreNonVide then%>
                   <td class="txt1"><font color="#969696">Titre :</font></td>             
                    <%else%>             
-                  <td class="txt1"><font color="#FF0000">Titre non saisie :</font> </td>  
+                  <td class="txt1"><b><font color="#FF0000">Titre non saisi</font></b> </td>  
                   <% end if %>
                     <td><% =request.form("titre")%><%session("titre")=request.form("titre")%></td>
                   </tr>
@@ -141,10 +141,10 @@ end if
                   
                
                   <tr> 
-				   <% if messageNonVide then %>
+				   <% if not messageNonVide then %>
                     <td valign="top" colspan="2"><font color="#969696">Message : </font><br/><br/><br/>&nbsp;</td>
 				   <%else%> 
-				    <td valign="top" colspan="2"><font color="#FF0000">Message non saisie :</font> </td>  
+				    <td valign="top" colspan="2"><b><font color="#FF0000">Message non saisi</font></b> </td>  
                   <% end if %>
                   </tr>
                   

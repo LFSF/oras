@@ -59,7 +59,7 @@ Set rsMembre = Conn.execute("SELECT * FROM MEMBRE WHERE NumMembre = " & rsActu("
 
 					<td ><div align="center">
 						
-				<a href="uploadFolder/Actu/<%=rsActu("PieceJointesActu")%>"><br/><img src="img racine/piece_jointe.jpg" border="0" ></a>
+				<a href="uploadFolder/Actu/<%=rsActu("PieceJointesActu")%>"><%=rsActu("PieceJointesActu")%></a>
 
 					</div></td>
 

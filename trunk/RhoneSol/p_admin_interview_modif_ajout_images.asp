@@ -1,11 +1,12 @@
 <%@LANGUAGE="VBSCRIPT"%>
 
 <!-- #include file="admin_securite.asp"-->
+<!-- #include file="connexion.asp"-->
 <% if not (session("admin_acces_admin")=1 or session("acces_itw")= 1) then
+	%><!-- #include file="deconnexion.asp"--><%
 	response.redirect("p_admin.asp")
 	else
 %>
-<!-- #include file="connexion.asp"-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -184,7 +185,7 @@ else
 
   <!-- #include file="grand_footer.txt"-->  
 </div>
-<!-- #include file="deconnexion.asp"-->
 </body>
+<!-- #include file="deconnexion.asp"-->
 </html>
 <% end if %>
