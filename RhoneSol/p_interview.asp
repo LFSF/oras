@@ -48,24 +48,40 @@ end if
 <!-- #include file="grand_meta.txt"-->
 <title>Rhône-solidarité</title>
 <link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 
 </head>
 <body>
 <!-- #include file="grand_header.txt"-->
+<SCRIPT LANGUAGE="Javascript1.1">
+function fonc_print() { 
+window.print(); 
+} 
 
+</SCRIPT>
+<SCRIPT language="JavaScript"> 
+function MM_openBrWindow(theURL,winName,features) 
+{ //v2.0
+  window.open(theURL,winName,features);
+}
+</SCRIPT>
 <div id="contenu">
 
 
 <!-- #include file="fichier_menu.txt"-->
 
 
-<div id="bandeau_orange">Interview du mois</div>
+<div id="banniere">Interview du mois</div>
 
 <%
 if rsED.EOF then
 %>
 
-    <table border="0px" width="100%" cellpadding="10px">
+    <table id="banniere" border="0px" width="100%" cellpadding="10px">
 
         <tr>
             <td colspan="2"><font color="#6faa06">Interviews______________________________________________________</font></td>
@@ -85,88 +101,82 @@ if rsED.EOF then
 <%
 else
 %>
-    <table border="0px" width="100%" cellpadding="10px">
-        
+    <table  border="0px" width="100%" cellpadding="10px">
+         <table id = "banniere" width="100%" cellpadding="10px">
         <tr>
-            <td colspan="2" align="right"><a href="javascript:;" onclick="print_art()" ><img src="./img racine/imp_no_border.jpg" alt="Imprimer" title="Imprimer" border="0" height="25"  width="23"/> Imprimer</a><a href="javascript:;" onclick="MM_openBrWindow('envoyerami.asp','Envoyer','scrollbars=no,width=330,height=252')"><img src="./img racine/part_no_border.gif" alt="Envoyer cette page &#224; un ami" title="Envoyer cette page &#224; un ami" border="0"/> Partager</a></td>
+            <td colspan="2" align="right"><a href="javascript:;" value = 'Imprimer le tableau actuel' onclick="javascript:window.print()" ><img src="./img racine/imp_no_border.jpg" alt="Imprimer" title="Imprimer" border="0" height="25"  width="23"/> Imprimer</a><a href="javascript:;" onclick="MM_openBrWindow('envoyerami.asp','Envoyer','scrollbars=no,width=330,height=252')"><img src="./img racine/part_no_border.gif" alt="Envoyer cette page &#224; un ami" title="Envoyer cette page &#224; un ami" border="0"/> Partager</a></td>
         </tr>
         <tr>
             <td colspan="2"><font color="#6faa06">Interview______________________________________________________</font></td>
         </tr>
-                    <tr>
+         </table>            <tr>
                     <td width=82%>
                          
-          
-          
-         <div align="justify">
-            <br/>
-            
-            <!--AJOUT CORPS DE TEXTE IMPORTE DE ORAS-->
-
-    <!--debut article-->        
-    <table>
-    <br/>
-    <!--Titre de l'interview-->
-        <!--
-        <div><center><%=Server.HTMLEncode(rsED("DescriptionItw"))%><center></div> <br/>
-        -->
-    <!--Fin Titre de l'interview-->
-        <div style="position:relative;margin-left:25px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;margin-top:40px;">
-            <font style="font-size:24px; font-style:italic;">I</font>NTERVIEW DE 
-                    <%=Server.HTMLEncode(rsED("CiviliteRespEnt"))%>&nbsp; <%=Server.HTMLEncode(rsED("NomRespEnt"))%>&nbsp; <%=Server.HTMLEncode(rsED("PrenomRespEnt"))%> : 
-                    <%=Server.HTMLEncode(rsED("StatutEnt"))%>&nbsp;<%=Server.HTMLEncode(rsED("RaiSocEnt"))%>
-        </div>
-                    <div id="test">&nbsp;</div>
-
-                    
-        <tr >
-
-            <td align="justify">
-           
-                <p><i><%=Server.HTMLEncode(rsED("IntroItw"))%></i></p>
-
-            </td>
+             
+           <div align="justify">
+		<br/>
         
-        </tr>
-    </table>
+        <!--AJOUT CORPS DE TEXTE IMPORTE DE ORAS-->
 
-    </p><br/>
-    </div>
+		
+<table id="tableau">
+<br/>
+<!--Titre de l'interview-->
+	<!--
+	<div><center><%=rsED("DescriptionItw")%><center></div> <br/>
+	-->
+<!--Fin Titre de l'interview-->
+	<div style="position:relative;margin-left:25px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;margin-top:40px;">
+		<font style="font-size:24px; font-style:italic;">I</font>NTERVIEW DE 
+				<%=rsED("CiviliteRespEnt")%>&nbsp; <%=rsED("NomRespEnt")%>&nbsp; <%=rsED("PrenomRespEnt")%> : 
+				<%=rsED("StatutEnt")%>&nbsp;<%=rsED("RaiSocEnt")%>
+	</div>
+				<div id="test">&nbsp;</div>
 
-            
-         
+				
+    <tr align="justify">
 
+    	<td>
+       
+	   	    <p><i><%=rsED("IntroItw")%></i></p>
 
+        </td>
+    
+    </tr>
+</table>
+
+</p><br/>
+</div>
 
         
-    <%
-    'Récupération des noms images 
-    Set rsNimg=Conn.Execute("SELECT NomImg FROM ListFiles WHERE NumItw="&rsED("NumItw"))
-    j=1
-    Dim tab(20)
-    for i=1 to 20 
-    if rsNimg.EOF then 
-    else
-     tab(i)= rsNimg("NomImg")
-    rsNimg.MoveNext
-    end if
-    next 
+<%
+'Récupération des noms images	
+Set rsNimg=Conn.Execute("SELECT NomImg FROM ListFiles WHERE NumItw="&rsED("NumItw"))
+j=1
+Dim tab(12)
+for i=1 to 12 
+if rsNimg.EOF then 
+else
+ tab(i)= rsNimg("NomImg")
+rsNimg.MoveNext
+end if
+next 
 
 
 
-        
-    'Récupération des Questions Réponses
-    Set rsQuestRep=Conn.Execute("SELECT Question,Reponse FROM QUESTION WHERE NumItw="&rsED("NumItw"))
+	
+'Récupération des Questions Réponses
+Set rsQuestRep=Conn.Execute("SELECT Question,Reponse FROM QUESTION WHERE NumItw="&rsED("NumItw"))
 
 
 
-     IF rsQuestRep.EOF Then
-              Response.Write("Il n'y a ni question ni réponse ")
-              Else
-              While Not rsQuestRep.EOF
-                'affichage des questions et réponses de l'interview
-                compteur=compteur+1
-            %>  
+ IF rsQuestRep.EOF Then
+		  Response.Write("Il n'y a ni question ni réponse ")
+		  Else
+		  While Not rsQuestRep.EOF
+			'affichage des questions et réponses de l'interview
+			compteur=compteur+1
+		%>	
     <table>
             <tr >
             
@@ -382,7 +392,7 @@ else
     %>
     </div>
 
-    <div>
+    <div id="banniere">
               <h2> 
                     <A href="p_interview_archive_visualisation.asp">
                         Acc&#233;der aux Interviews archiv&#233;s
@@ -400,8 +410,10 @@ end if
 
 <!-- Ne pas toucher à ce qui suit : placement du footer -->
 
+<div id="banniere">
 
   <!-- #include file="grand_footer.txt"--> 
+  </div>
 </body>
 </html>
 
