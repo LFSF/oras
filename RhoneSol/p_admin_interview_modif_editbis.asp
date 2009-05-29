@@ -169,7 +169,11 @@ div.alien{cursor:hand}
     
  <table>
 <%  Dim Question,Reponse
- 
+	
+	if RS_count.eof or rsE.eof then
+		response.write ("Il n'y a pas de question à cet interview" & "<br><br><br><br>")
+	else
+	
 	for i=0 to 19
 		if (i>=RS_count("Nb_question")) then
 			Question=""
@@ -234,5 +238,12 @@ div.alien{cursor:hand}
 
 
 </body>
+<% end if %>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 </html>
 <% end if %>

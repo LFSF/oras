@@ -35,7 +35,7 @@
 Dim Place
 Place = 0
 
-Set rsED = Conn.Execute("SELECT NumActu,NumMembre,DateActu,TitreActu,Visible,ArticleActu FROM ACTUALITE where Visible=1 ORDER BY DateActu DESC")
+Set rsED = Conn.Execute("SELECT * FROM ACTUALITE where Visible=1 ORDER BY DateActu DESC")
 
 if rsED.EOF Then
     Response.Write("Il n'y a aucune Actualit&eacute; pour le moment")
@@ -68,7 +68,8 @@ End If
                 Response.Write "...</p>"
               end if
             %>
-        </td> <td width="20"><a href="p_actualitesbis.asp?num=<%=rsED("NumActu")%>"><img src="img/postdisplay.gif" border="0"></a></td>
+        </td> 
+		<td width="20"><a href="p_actualitesbis.asp?num=<%=rsED("NumActu")%>"><img src="img/postdisplay.gif" border="0"></a></td>
         <!--<td align="right">
 
         </td>-->

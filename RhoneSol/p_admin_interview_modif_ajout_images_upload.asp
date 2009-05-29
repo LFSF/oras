@@ -1,12 +1,13 @@
 <%@LANGUAGE="VBSCRIPT"%>
 
 <!-- #include file="admin_securite.asp"-->
+<!--#INCLUDE FILE="_upload.asp"-->
 <% if not (session("admin_acces_admin")=1 or session("acces_itw")= 1) then
 	response.redirect("p_admin.asp")
 	else
 %>
 <% if not(Request.ServerVariables("HTTP_REFERER")="http://www.rhone-solidarite.com/p_admin_interview_modif_ajout_images.asp") then
-	response.redirect("http://www.rhone-solidarite.com/p_admin_actu_visualisation.asp")
+	response.redirect("http://www.rhone-solidarite.com/p_admin_interview_modif_ajout_images.asp")
 	else
 %>
 
@@ -165,7 +166,7 @@ Server.ScriptTimeout = 5000
 'Using Huge-ASP file upload
 'Dim Form: Set Form = Server.CreateObject("ScriptUtils.ASPForm")
 'Using Pure-ASP file upload
-Dim Form: Set Form = New ASPForm %><!--#INCLUDE FILE="_upload.asp"--><% 
+Dim Form: Set Form = New ASPForm %><% 
 
 Server.ScriptTimeout = 1000
 

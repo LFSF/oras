@@ -50,14 +50,14 @@ set rsMembre = Conn.Execute("SELECT * FROM MEMBRE WHERE NumMembre = " & rsActu("
 
                     <td ><div align="center">
                         
-                    <a href="uploadFolder/Actu/<%=rsActu("PieceJointesActu")%>"><br/><img src="img racine/piece_jointe.jpg" border="0" ></a>
-                    <ul>
+                    <a href="uploadFolder/Actu/<%=rsActu("PieceJointesActu")%>"><%=rsActu("PieceJointesActu")%></a>
+                    <!--ul>
                         <%
-                          titre=rsActu("PieceJointesActu")
+                          'titre=rsActu("PieceJointesActu")
                           'Affiche que le titre , pas le path
-                          Response.Write "<li>"&Mid(titre,InStrRev(titre,"/")+1,len(titre))&"</li>"
+                          'Response.Write "<li>"&Mid(titre,InStrRev(titre,"/")+1,len(titre))&"</li>"
                         %>
-                    </ul>
+                    </ul-->
                     </div></td>
 
 <% end if %>
