@@ -5,7 +5,7 @@
 <title><%Server.HtmlEncode("Votre espace d'image")%></title>
 <script type="text/javascript" >
 function envoyerpath(img){
-    window.opener.document.getElementById('src').value= img.src;
+    window.opener.document.getElementById('src').value= img;
     window.close();
 }
 
@@ -37,8 +37,12 @@ function check_file(){
 
 
 }
+
+function effacerImg(imgsrc){
+	window.location.href="effacer_img.asp?path="+imgsrc;
+	}
 </script>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="generator" content="HAPedit 3.1">
 </head>
 <BODY>
@@ -63,7 +67,9 @@ if Request.QueryString("retour")<>"" then
     if Request.QueryString("retour")="1" then
         Response.Write "<div style='background-color:green;border: 1px solid green;padding:2px;color:white;'>L'image a bien été ajoutée</div>"
     elseif Request.QueryString("retour")="0" then
-        Response.Write "<div style='background-color:red;border: 1px solid black;padding:2px;'>Il y a eu un probleme lors du chargement de l'image</div>"
+        Response.Write "<div style='background-color:red;border: 1px solid black;padding:2px;'>Il y a eu un probleme avec l'image</div>"
+	elseif Request.QueryString("retour")="2" then
+        Response.Write "<div style='background-color:green;border: 1px solid green;padding:2px;color:white;'>L'image a bien été effacée</div>"
     end if
     Response.write "</td></tr>"
 end if
@@ -129,7 +135,9 @@ Response.Write "<table cellspacing=""5"">"
         end if
 
         Response.Write "<td>"
-        Response.Write "<a href=""javascript:;"" onclick=""envoyerpath(document.images["&cpt&"])""><img name="&cpt&" src="""&pathdir&"\"&f.name&""" width=""95"" height=""95"" alt="""&pathdir&"\"&f.name&""" title="""&f.dateCreated&""" - """&f.size / 1000&""" Ko"" border=""0""/></a>"
+        Response.Write "<a href=""javascript:;"" onclick=""envoyerpath('"&pathdir&f.name&"')""><img name="&cpt&" src="""&pathdir&f.name&""" width=""95"" height=""95"" alt="""&pathdir&"\"&f.name&""" title="""&f.name&" - "&f.size&" Ko"" border=""0""/></a>"
+		dir=Server.MapPath(pathdir)
+		Response.write "<div onclick=""effacerImg('"&Server.URLEncode(dir&"\"&f.name)&"');""><img src=""img/postdelete.gif"" title=""Effacer une image"" /></div>"
         Response.Write "</td>"
 
 
