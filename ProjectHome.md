@@ -1,0 +1,1 @@
+SVN de l'association Oras pour rhone solidarité, rhone équitable et forum équitable
